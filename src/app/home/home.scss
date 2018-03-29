@@ -1,0 +1,92 @@
+#home {
+    display: grid;
+    grid-template-columns: 42% 42%;
+    grid-gap: 16%;
+    .channels {
+        margin-top: 10px;
+        .product {
+            display: inline-block;
+            font-size: 0;
+            margin-right: 10px;
+            cursor: pointer;
+            transition: 200ms box-shadow;
+            &:hover {
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            }
+            img {
+                height: 80px;
+                width: 80px;
+            }
+        }
+    }
+    .events {
+        margin-top: 10px;
+        .event {
+            margin-bottom: 10px;
+            border-bottom: solid 1px #777;
+            transition: 200ms background-color;
+            cursor: pointer;
+            &:hover {
+                background-color: darken(#fff, 3%);
+            }
+            .title {
+                color: $primary-color;
+                font-size: 18px;
+            }
+            .date {
+                font-size: 14px;
+            }
+        }
+    }
+    .posts {
+        margin-top: 10px;
+        .post {
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: solid 1px #777;
+            transition: 200ms background-color;
+            cursor: pointer;
+            &:hover {
+                background-color: darken(#fff, 3%);
+            }
+            .title {
+                color: $primary-color;
+                font-size: 18px;
+            }
+            .by {
+                font-size: 12px;
+            }
+        }
+    }
+    .articles {
+        margin-top: 10px;
+        .article {
+            font-size: 0;
+            margin-bottom: 15px;
+            transition: 200ms background-color;
+            border-radius: 60px;
+            transition: 200ms background-color;
+            cursor: pointer;
+            &:hover {
+                background-color: darken(#fff, 5%);
+            }
+            .image {
+                display: inline-block;
+                background-color: $primary-color;
+                border: none;
+                border-radius: 50%;
+                img {
+                    padding: 10px;
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+            .title {
+                display: inline-block;
+                font-size: 16px;
+                vertical-align: top;
+                padding:15px;
+            }
+        }
+    }
+}

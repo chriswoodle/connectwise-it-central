@@ -64,7 +64,7 @@ gulp.task('browser-sync', false, function (callback) {
         proxy: "http://localhost:8080",
         reloadDelay: 2000,
         files: [config.globs.allClientFiles],
-        port: 7000,
+        port: 7001,
     });
     callback();
 });

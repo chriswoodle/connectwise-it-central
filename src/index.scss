@@ -1,4 +1,32 @@
-
 @import 'style/*.scss';
 @import 'app/**/*.scss';
+html {
+    font-family: 'Helvetica'
+}
 
+body {
+    background-color: #FCFCFF;
+    color: #777;
+}
+
+h1 {
+    font-size: 2em;
+    margin-top: 5px;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: .8em;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0; 
+}

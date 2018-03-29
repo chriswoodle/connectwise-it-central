@@ -1,0 +1,33 @@
+<div id="account">
+    <div class="profile">
+        <div class="image">
+            <img ng-src="//www.gravatar.com/avatar/b97b922de69af53b2733aea20c4d601a/" src="//www.gravatar.com/avatar/b97b922de69af53b2733aea20c4d601a/">
+        </div>
+        <div class="name"> Chris Woodle</div>
+    </div>
+    <div class="social">
+        <table>
+            <tr>
+                <td>Company</td>
+                <td>Droplit, Inc</td>
+            </tr>
+            <tr>
+                <td>Twitter</td>
+                <td>chriswoodle</td>
+            </tr>
+            <tr>
+                <td>Linkedin</td>
+                <td>chriswoodle</td>
+            </tr>
+        </table>
+    </div>
+    <div class="toolbox">
+        <h1>Toolbox</h1>
+        <div ng-repeat="product in vm.toolbox" class="product">
+            <div class="logo">
+                <img ng-src="{{product.img}}"/>
+            </div>
+            <div class="text" ng-bind="product.title"></div>
+        </div>
+    </div>
+</div>

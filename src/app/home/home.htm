@@ -1,0 +1,48 @@
+<div id="home">
+    <div>
+        <h1>Dashboard</h1>
+        <h3>My Channels</h3>
+        <div class="channels">
+            <div ng-repeat="product in vm.channels" class="product">
+                <div class="logo">
+                    <img ng-src="{{product.img}}" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1>Events</h1>
+        <h3>Coming up</h3>
+        <div class="events">
+            <div ng-repeat="event in vm.events" class="event">
+                <div class="title" ng-bind="event.title"></div>
+                <div class="date" ng-bind="event.date"></div>
+            </div>
+        </div>
+    </div>
+    <div>
+
+        <h1>Groups</h1>
+        <h3>New Posts</h3>
+        <div class="posts">
+            <div ng-repeat="post in vm.posts" class="post">
+                <div class="title" ng-bind="post.title"></div>
+                <div class="by" ng-bind="post.by"></div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h1>Articles / Webinars</h1>
+        <h3>By ConnectWise</h3>
+        <div class="articles">
+            <div ng-repeat="article in vm.articles" class="article">
+                <div class="image">
+                    <img ng-src="{{article.img}}" />
+                </div>
+                <div class="title" ng-bind="article.title"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
